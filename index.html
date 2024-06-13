@@ -8,18 +8,23 @@
 </head>
 <body>
     <header>
-        <div class="logo">
+        <div class="container">
             <h1>Next SRLS</h1>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Chi Siamo</a></li>
+                    <li><a href="#services">Servizi</a></li>
+                    <li><a href="#projects">Alcuni dei nostri lavori</a></li>
+                    <li><a href="request-quote.html">Richiedi Preventivo</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
         </div>
-        <nav class="sidebar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Alcuni dei nostri lavori</a></li>
-                <li><a href="about.html">Chi Siamo</a></li>
-                <li><a href="request-quote.html">Richiedi Preventivo</a></li>
-                <li><a href="services.html">Servizi</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main class="container">
@@ -31,11 +36,11 @@
             <h3>Campi e Settori di Applicazione</h3>
             <p>Next offre soluzioni domotiche in vari campi, tra cui:</p>
             <ul>
-                <li>Gestione Energetica: Ottimizzazione dei consumi energetici attraverso il controllo intelligente di riscaldamento, climatizzazione e illuminazione, riducendo gli sprechi e i costi.</li>
-                <li>Sicurezza: Sistemi di allarme, videosorveglianza e controllo accessi integrati che garantiscono la massima sicurezza per la vostra abitazione o azienda.</li>
-                <li>Comfort e Benessere: Automazione di tapparelle, tende, sistemi di irrigazione e gestione di elettrodomestici per migliorare il comfort abitativo.</li>
-                <li>Intrattenimento: Integrazione di sistemi audio-video, home theatre e multiroom per un'esperienza di intrattenimento unica e personalizzata.</li>
-                <li>Assistenza alla Persona: Soluzioni dedicate per l'assistenza a persone anziane o con disabilità, migliorando l'autonomia e la qualità della vita.</li>
+                <li><strong>Gestione Energetica:</strong> Ottimizzazione dei consumi energetici attraverso il controllo intelligente di riscaldamento, climatizzazione e illuminazione, riducendo gli sprechi e i costi.</li>
+                <li><strong>Sicurezza:</strong> Sistemi di allarme, videosorveglianza e controllo accessi integrati che garantiscono la massima sicurezza per la vostra abitazione o azienda.</li>
+                <li><strong>Comfort e Benessere:</strong> Automazione di tapparelle, tende, sistemi di irrigazione e gestione di elettrodomestici per migliorare il comfort abitativo.</li>
+                <li><strong>Intrattenimento:</strong> Integrazione di sistemi audio-video, home theatre e multiroom per un'esperienza di intrattenimento unica e personalizzata.</li>
+                <li><strong>Assistenza alla Persona:</strong> Soluzioni dedicate per l'assistenza a persone anziane o con disabilità, migliorando l'autonomia e la qualità della vita.</li>
             </ul>
             <h3>Dove Operiamo</h3>
             <p>Next opera a livello nazionale, offrendo i propri servizi sia per abitazioni private che per edifici commerciali e industriali. Il nostro team di esperti è a disposizione per consulenze personalizzate, progettazione e installazione, garantendo un servizio completo e su misura per ogni esigenza.</p>
@@ -45,6 +50,31 @@
             <p>Scegliere Next SRLS significa affidarsi a un partner di fiducia per trasformare la vostra casa in un ambiente smart, efficiente e sicuro. Esplorate le nostre soluzioni domotiche e scoprite come possiamo migliorare la vostra vita quotidiana con la tecnologia del futuro.</p>
             <p>Per ulteriori informazioni, non esitate a contattarci. Il nostro team è pronto a guidarvi nella scoperta delle potenzialità della domotica firmata Next.</p>
         </section>
+
+        <section id="services">
+            <h2>Servizi</h2>
+            <div class="service">
+                <h3>Impianti di Domotica</h3>
+                <p>Sistemi avanzati per la gestione intelligente della casa, dalla sicurezza all'illuminazione, fino al controllo della climatizzazione e degli elettrodomestici.</p>
+            </div>
+            <div class="service">
+                <h3>Impianti Elettrici</h3>
+                <p>Progettazione e realizzazione di impianti elettrici civili e industriali, garantendo efficienza e sicurezza.</p>
+            </div>
+            <div class="service">
+                <h3>Manutenzione e Assistenza</h3>
+                <p>Servizi di manutenzione e assistenza tecnica per garantire il corretto funzionamento degli impianti e risolvere eventuali problemi.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Alcuni dei nostri lavori</h2>
+            <div class="projects-gallery">
+                <img src="images/project1.jpg" alt="Progetto 1">
+                <img src="images/project2.jpg" alt="Progetto 2">
+                <img src="images/project3.jpg" alt="Progetto 3">
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -52,7 +82,11 @@
             <p>&copy; 2024 Next SRLS. Tutti i diritti riservati.</p>
         </div>
     </footer>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
-
-<!-- Forzare nuova distribuzione -->
